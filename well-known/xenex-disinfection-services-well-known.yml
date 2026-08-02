@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of https://xenex.com and https://dms.xenex.com
+description: >-
+  Results of probing the /.well-known/ discovery surface for the Xenex
+  Disinfection Services web hosts (xenex.com corporate site and the
+  dms.xenex.com TrackMate/DMS client portal). Status is the HTTP code
+  observed at fetch time. No /.well-known/ documents are published on
+  either host; the provider does publish a root /llms.txt on xenex.com,
+  which is saved verbatim in llms/xenex-disinfection-services-llms.txt.
+hosts:
+  - host: https://xenex.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        type: text/plain
+        file: ../llms/xenex-disinfection-services-llms.txt
+        note: root-level llms.txt (not a /.well-known/ document); saved verbatim
+  - host: https://dms.xenex.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404

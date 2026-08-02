@@ -1,8 +1,27 @@
 aid: xenex-disinfection-services
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/xenex-disinfection-services.png
 name: Xenex Disinfection Services
-description: Xenex Disinfection Services is a company surfaced as a portfolio company of battery-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Xenex Disinfection Services is a San Antonio, Texas-based medical technology
+  company founded in 2008 by Johns Hopkins-trained epidemiologists Dr. Mark Stibich
+  and Dr. Julie Stachowiak. Its LightStrike+ pulsed-xenon UV robot is the first FDA-authorized
+  whole-room microbial reduction device, used by hospitals to destroy pathogens like
+  C. difficile on surfaces; the portfolio also includes the LightStrike6 robot, the
+  Deactivate handheld LED unit, and the TrackMate digital cleaning-event tracking
+  system with a client portal at dms.xenex.com. Added to the API Evangelist network
+  as a Battery Ventures portfolio company; enrichment probing found no public developer
+  API, SDK, or developer portal, but the company does publish an llms.txt company
+  profile on its website.
 url: https://raw.githubusercontent.com/api-evangelist/xenex-disinfection-services/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +31,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- UV Disinfection
+- Medical Devices
+- Healthcare
+- Infection Prevention
+- Robotics
+- Hospital Operations
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/xenex-disinfection-services-domain-security.yml
+- type: Website
+  url: https://xenex.com/
+- type: Blog
+  url: https://xenex.com/blog/
+- type: Support
+  url: https://xenex.com/xenex-xtra-care/
+- type: PrivacyPolicy
+  url: https://xenex.com/privacy-policy/
+- type: Login
+  url: https://dms.xenex.com/Account/Login
+- type: LLMsTxt
+  url: llms/xenex-disinfection-services-llms.txt
+- type: WellKnown
+  url: well-known/xenex-disinfection-services-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
